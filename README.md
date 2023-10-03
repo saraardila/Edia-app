@@ -1,7 +1,7 @@
 
 # Edia-proyect 
 
-| <img src="https://github.com/saraardila/Edia-proyect/assets/82755257/706ad19e-5d78-44ab-bbf9-2ab20bf81aa2" width="550" height="350"> |
+| <img src="https://github.com/saraardila/Edia-proyect/assets/82755257/706ad19e-5d78-44ab-bbf9-2ab20bf81aa2"> |
 |:---:|
 
 ## Descripción
