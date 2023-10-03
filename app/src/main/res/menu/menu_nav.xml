@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon"
+        android:title="" />
+
+    <item android:id="@+id/nav_notificaciones"
+        android:title=""
+        android:icon="@drawable/search_icon"/>
+   <!-- <item
+        android:id="@+id/icon_nav"
+        android:icon="@drawable/like_color"
+        android:title="" />-->
+    <item
+        android:id="@+id/nav_publicacion"
+        android:icon="@drawable/subir_icon"
+        android:title="" />
+
+    <!--  <item android:id="@+id/nav_ajustes"
+        android:title="Ajustes"
+        android:icon="@drawable/ajustes"/> -->
+
+    <item android:id="@+id/nav_mas"
+        android:title=""
+        android:icon="@drawable/notificaciones"/>
+
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/perfil_icon"
+        android:title="" />
+
+    <!--<item android:id="@+id/nav_buscador"
+        android:title="Buscador"
+        android:icon="@drawable/search_icon"/>-->
+</menu>

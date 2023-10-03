@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "23327398354",
+    "firebase_url": "https://edia-b130b-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "edia-b130b",
+    "storage_bucket": "edia-b130b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23327398354:android:731ded74ce47071793500b",
+        "android_client_info": {
+          "package_name": "com.example.proyectoedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23327398354-uttfc7l41hiel2fqk1lja5kepeutifvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkfHcb1XAciIYQ88LAhxvUdQEMu1kISDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23327398354-uttfc7l41hiel2fqk1lja5kepeutifvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

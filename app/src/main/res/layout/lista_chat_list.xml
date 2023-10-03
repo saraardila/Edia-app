@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="3dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    style="@style/circleButton"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/perfilImagenIv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/icon_person"/>
+
+        <ImageView
+            android:id="@+id/estadoIv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+        <TextView
+            android:id="@+id/nombreTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginStart="4dp"
+            android:maxLines="2"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:fontFamily="@font/font_style_medium"
+            android:layout_toEndOf="@+id/perfilImagenIv"
+            android:layout_toRightOf="@id/perfilImagenIv"
+            android:layout_marginLeft="3dp"/>
+
+        <TextView
+            android:id="@+id/ultimoMensajeTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ultimo mensaje"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/font_style_medium"
+            android:textColor="@color/colorBlack"
+            android:layout_toEndOf="@+id/perfilImagenIv"
+            android:layout_toRightOf="@id/perfilImagenIv"
+            android:layout_below="@+id/nombreTv"
+            android:layout_marginLeft="4dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

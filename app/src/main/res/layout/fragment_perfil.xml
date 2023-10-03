@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.perfil.PerfilFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <!--Convertimos esta parte del relative en una imagen-->
+            <ImageView
+                android:id="@+id/portadaIv"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:background="@drawable/fondo_log4"
+                android:scaleType="fitXY"></ImageView>
+
+            <!-- Para que se publiquen los post de un usuario concreto -->
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+
+                <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/icon_person" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nombre"
+                        android:layout_width="192dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/font_style_bold"
+                        android:hint="Nombre"
+
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/lugar"
+                        android:layout_width="256dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/font_style_regular"
+                        android:hint="¿De donde eres? " />
+
+                    <TextView
+                        android:id="@+id/descripcion"
+                        android:layout_width="271dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="5dp"
+
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/font_style_regular"
+                        android:hint="Pon aquí algo sobre ti " />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_posts"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginTop="70dp" />
+
+            <TextView
+                android:id="@+id/viajes"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="164dp"
+                style="@style/gradientPink"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/font_style_bold"
+                android:paddingTop="15dp"
+                android:text="Galeria"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="17dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/boton_flotante"
+                android:layout_width="474dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom|end"
+                android:layout_marginLeft="334dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="70dp"
+                app:srcCompat="@mipmap/ic_editar" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!--Creamos el un boton flotante para modificar-->
+</RelativeLayout>

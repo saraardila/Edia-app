@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".publicacion.PublicacionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:orientation="vertical">
+
+        <!--Titulo de la imagen-->
+
+        <EditText
+            android:id="@+id/pTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:drawableStart="@drawable/pin_icon"
+            android:hint=" Escriba aquí su ubicación"
+            android:padding="10dp"
+            android:pointerIcon="zoom_in"
+            android:singleLine="true"
+            android:fontFamily="@font/font_style_regular"/>
+
+        <!--Imagen del post-->
+        <ImageView
+            android:id="@+id/pImagenIv"
+            android:layout_width="278dp"
+            android:layout_height="298dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/illustracion4"
+            android:minHeight="200dp"
+
+            />
+
+        <EditText
+            android:id="@+id/pDescripcionEt"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginBottom="5dp"
+            android:drawableRight="@drawable/pen_icon"
+            android:fontFamily="@font/font_style_regular"
+            android:gravity="start"
+            android:hint="¡Descríbenos tu viaje ! "
+            android:inputType="textCapSentences|textMultiLine"
+            android:minHeight="69dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/pPublicarBtn"
+            style="@style/loginButton"
+            android:layout_width="143dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:text="Publicar" />
+    </LinearLayout>
+</ScrollView>

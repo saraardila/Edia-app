@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".login.RegistroActivity"
+    android:background="@drawable/fondo_log1"
+ >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="¡Registrate!"
+        android:textAlignment="center"
+        android:textColor="#326994"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="185dp"
+        android:layout_height="81dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTIL"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp">
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <!--TextView: CONTRASEÑA -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/contrasenaTIL"
+            android:layout_below="@id/emailTIL"
+            app:passwordToggleEnabled="true"><!--el ojito de la contraseña-->
+
+            <EditText
+                android:id="@+id/contrasenaEt"
+                android:inputType="textPassword"
+                android:hint="Contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <!--TextView: NICK -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nikTIL"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTIL"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="60dp"><!--el ojito de la contraseña-->
+
+        <EditText
+            android:id="@+id/nikEt"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:hint="Nombre de usuario "
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lugarTIL"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nikTIL"
+        android:layout_centerVertical="true"
+        ><!--el ojito de la contraseña-->
+
+        <EditText
+            android:id="@+id/lugarEt"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:hint="¿De dónde eres? "
+            android:inputType="textAutoComplete" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descripcionTIL"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lugarTIL"
+        android:layout_centerVertical="true"><!--el ojito de la contraseña-->
+
+        <EditText
+            android:id="@+id/descripcionEt"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:hint="Escribe algo sobre ti "
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/registro_btn"
+        style="@style/loginButton"
+        android:layout_width="161dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/descripcionTIL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:drawablePadding="5dp"
+        android:text="REGÍSTRATE" />
+
+    <TextView
+        android:id="@+id/estar_registradoTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registro_btn"
+        android:layout_marginTop="21dp"
+        android:gravity="center_horizontal"
+        android:text="¿Ya estás registrado? "
+        android:textAlignment="center" />
+
+</RelativeLayout>

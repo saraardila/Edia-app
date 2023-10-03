@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".login.LoginActivity"
+    android:background="@drawable/fondo_log2">
+
+    <!--TextView: LOGIN -->
+
+
+    <ImageView
+        android:layout_width="187dp"
+        android:layout_height="76dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="168dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="91dp"
+        android:gravity="center_horizontal"
+        android:text="de nuevo!"
+        android:fontFamily="@font/font_style_bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/emailTIL">
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/font_style_regular"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--TextView: CONTRASEÑA -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contrasenaTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTIL"
+        android:layout_centerInParent="true"
+        app:passwordToggleEnabled="true"><!--el ojito de la contraseña-->
+
+        <EditText
+            android:id="@+id/contrasenaEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:fontFamily="@font/font_style_regular"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/loginButton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contrasenaTIL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/font_style_regular"
+        android:text="Entrar" />
+
+    <TextView
+        android:id="@+id/noestar_registradoTv"
+        android:layout_width="307dp"
+        android:layout_height="29dp"
+        android:layout_below="@id/loginBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="37dp"
+        android:gravity="center_horizontal"
+        android:text="¿Aún no tienes una cuenta? Regístrate! "
+        android:fontFamily="@font/font_style_regular"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/olvidar_contrasenaTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="¿Has olvidado la contraseña?"
+        android:fontFamily="@font/font_style_regular"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:text="¡Bienvenido"
+        android:fontFamily="@font/font_style_bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
