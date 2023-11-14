@@ -14,25 +14,7 @@
 - Paula Derecho: desarrollo
 - Sara Ardila: desarrollo y diseño gráfico de la app
 
-## Puedes descargar el apk y probarla aquí:
-
-https://edia-apk.web.app/
-
-## Características principales
-
-- Registro de usuarios.
-- Pantalla de inicio con las publicaciones de las personas registradas.
-- Chat en linea con diferentes estados: última conexion, online, escribiendo...
-- Cambio de color en los chat desconectado/conectado
-- Estado del mensaje: visto/entregado
-- Subida de imágenes mediante acceso a la camara y con una descripción en la publicación.
-- Visita a otros perfiles.
-- Perfil de usuario con edición en la biografía, cambio de foto de perfil y banner.
-- Recuento de 'Me gusta' en las publicaciones
-- Comentarios en las publicaciones.
-
-
-## Capturas de pantalla
+  ## Capturas de pantalla
 
 A continuación, se muestran algunas capturas de pantalla de la aplicación:
 
@@ -53,6 +35,26 @@ A continuación, se muestran algunas capturas de pantalla de la aplicación:
 | Notificaciones| Perfil usuario | Ajustes Usuario
 |:---:|:---:|:---:|
 |![image](https://github.com/saraardila/Edia-proyect/assets/82755257/f5fbc690-a142-4e01-8506-1c914d5d4f2c)|![image](https://github.com/saraardila/Edia-proyect/assets/82755257/472d21e9-dead-4d15-ba33-344898ffad70)|![image](https://github.com/saraardila/Edia-proyect/assets/82755257/3eb98841-9537-4236-a0fc-a001d3dfeb10)|
+
+
+## Puedes descargar el apk y probarla aquí:
+
+https://edia-apk.web.app/
+
+## Características principales
+
+- Registro de usuarios.
+- Pantalla de inicio con las publicaciones de las personas registradas.
+- Chat en linea con diferentes estados: última conexion, online, escribiendo...
+- Cambio de color en los chat desconectado/conectado
+- Estado del mensaje: visto/entregado
+- Subida de imágenes mediante acceso a la camara y con una descripción en la publicación.
+- Visita a otros perfiles.
+- Perfil de usuario con edición en la biografía, cambio de foto de perfil y banner.
+- Recuento de 'Me gusta' en las publicaciones
+- Comentarios en las publicaciones.
+
+
 
 
 
